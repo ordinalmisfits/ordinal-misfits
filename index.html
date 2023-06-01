@@ -50,6 +50,19 @@
         animation: rotate 2s ease infinite;
         position: relative;
       }
+      .btn {
+        text-decoration: none;
+        border: 2px ridge #fff;
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+
+        border: 2px outset rgb(227, 227, 227);
+      }
+      .btn:focus,
+      .btn:active {
+        border-style: inset;
+      }
       @keyframes rotate {
         from {
           transform: rotate(0deg);
@@ -67,7 +80,9 @@
       </figure>
       <h1>You're Early!🚧🔨</h1>
 
-      <p>Our site is currently under construction</p>
+      <p>Our site is currently under development</p>
+
+      <a href="#" class="btn">Check It Out!</a>
 
       <p>Your system time is: <span id="time" style="color: #fff"></span></p>
     </main>
