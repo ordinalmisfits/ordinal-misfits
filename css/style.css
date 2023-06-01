@@ -83,10 +83,6 @@ nav .socials a:active::after {
   transform: scale(1);
 }
 
-main {
-  overflow-x: hidden; //aos fade-* issue
-}
-
 section:not(:last-of-type) {
   padding: 3rem 2rem;
 }
@@ -95,6 +91,7 @@ section:not(:last-of-type) {
   display: grid;
   background-color: #ed5120;
   gap: 20px;
+  overflow-x: hidden;
   /* background-color: #ed5120; */
 }
 #home header {
@@ -121,6 +118,7 @@ section:not(:last-of-type) {
   background-color: #fff;
   color: #000;
   gap: 20px;
+  overflow-x: hidden;
 }
 .about_content h2 {
   margin-bottom: 10px;
@@ -149,6 +147,7 @@ section:not(:last-of-type) {
   padding: 3rem;
   display: grid;
   gap: 20px;
+  overflow-x: hidden;
 }
 .goals_content {
   order: 1;
