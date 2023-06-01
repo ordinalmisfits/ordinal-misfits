@@ -128,7 +128,7 @@ section:not(:last-of-type) {
 .about_content p {
   margin-top: 10px;
 }
-.about_content p:nth-child(3)::after {
+.about_content p:nth-child(4)::after {
   content: "👇";
 }
 .about_media {
@@ -194,7 +194,7 @@ footer p strong {
   #goals {
     grid-template-columns: 1fr 1fr;
   }
-  .about_content p:nth-child(3)::after {
+  .about_content p:nth-child(4)::after {
     content: "👉";
   }
   .about_media img {
