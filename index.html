@@ -103,6 +103,24 @@
         </div>
       </section>
     </main>
+    <section id="gallery">
+      <h2>Misfits Lounge</h2>
+      <!-- <p class="pix-play"></p> -->
+      <div class="gallery-grid">
+        <figure>
+          <img src="./images/misfit-chick.jpg" alt="" />
+        </figure>
+        <figure>
+          <img src="./images/misfit-punk.jpg" alt="" />
+        </figure>
+        <figure>
+          <video controls muted playsinline>
+            <source src="./images/we-all-misfits.mp4" />
+          </video>
+          <button id="mute-btn">Mute</button>
+        </figure>
+      </div>
+    </section>
     <footer>
       <div class="poweredby">
         <p>Powered by $Bitcoin</p>
@@ -118,5 +136,6 @@
       }).go();
       AOS.init();
     </script>
+    <script src="./main.js"></script>
   </body>
 </html>
