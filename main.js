@@ -7,6 +7,7 @@ const muteBtn = document.getElementById("mute-btn");
 muteBtn.addEventListener("click", () => {
   const video = muteBtn.previousElementSibling;
   video.muted = !video.muted;
+  muteBtn.textContent = video.muted ? "Unmute" : "Mute";
 });
 
 const observer = new IntersectionObserver((entries) => {
