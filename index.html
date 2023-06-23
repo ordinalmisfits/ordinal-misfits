@@ -83,6 +83,32 @@
           />
         </div>
       </section>
+      <section id="lotterycountdown">
+        <h2>Are Misfits gonna be ready for this??</h2>
+        <div class="counter">
+          <div class="counter__stat">
+            <div id="thousandth">
+              <p class="number">-</p>
+            </div>
+          </div>
+          <div class="counter__stat">
+            <div id="hundredth">
+              <p class="number">-</p>
+            </div>
+          </div>
+          <div class="counter__stat">
+            <div id="tenth">
+              <p class="number">-</p>
+            </div>
+          </div>
+          <div class="counter__stat">
+            <div id="ones">
+              <p class="number">-</p>
+            </div>
+          </div>
+        </div>
+        <p>When the counter stops, one lucky Misfit will win the lot!</p>
+      </section>
       <section id="goals">
         <div class="goals_content">
           <h2>OUR GOALS</h2>
@@ -102,25 +128,25 @@
           <img src="./images/IMG_2917.png" alt="OrdinalMisfit Academy" />
         </div>
       </section>
+      <section id="gallery">
+        <h2>Misfits Lounge</h2>
+        <!-- <p class="pix-play"></p> -->
+        <div class="gallery-grid">
+          <figure>
+            <img src="./images/misfit-chick.jpg" alt="" />
+          </figure>
+          <figure>
+            <img src="./images/misfit-punk.jpg" alt="" />
+          </figure>
+          <figure>
+            <video controls muted playsinline>
+              <source src="./images/we-all-misfits.mp4" />
+            </video>
+            <button id="mute-btn">Unmute</button>
+          </figure>
+        </div>
+      </section>
     </main>
-    <section id="gallery">
-      <h2>Misfits Lounge</h2>
-      <!-- <p class="pix-play"></p> -->
-      <div class="gallery-grid">
-        <figure>
-          <img src="./images/misfit-chick.jpg" alt="" />
-        </figure>
-        <figure>
-          <img src="./images/misfit-punk.jpg" alt="" />
-        </figure>
-        <figure>
-          <video controls muted playsinline>
-            <source src="./images/we-all-misfits.mp4" />
-          </video>
-          <button id="mute-btn">Unmute</button>
-        </figure>
-      </div>
-    </section>
     <footer>
       <div class="poweredby">
         <p>Powered by $Bitcoin</p>
@@ -137,5 +163,6 @@
       AOS.init();
     </script>
     <script src="./main.js"></script>
+    <script src="./countdown.js"></script>
   </body>
 </html>
