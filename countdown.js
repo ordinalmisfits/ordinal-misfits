@@ -1,10 +1,12 @@
+import { API_URL } from "./config.js";
+
 const thousandEl = document.querySelector("#thousandth");
 const hundredEl = document.querySelector("#hundredth");
 const tensEl = document.querySelector("#tenth");
 const onesEl = document.querySelector("#ones");
 
-MAX_COUNTER_LENGTH = 5000;
-COUNTER_INCREMENT_INTERVAL = 30 * 60 * 1000;
+const MAX_COUNTER_LENGTH = 5000;
+const COUNTER_INCREMENT_INTERVAL = 30 * 60 * 1000;
 
 const getPrevNum = (number) => {
   if (parseInt(number) <= 0) return 0;
@@ -13,7 +15,7 @@ const getPrevNum = (number) => {
 
 async function fetchCountdownInfo() {
   // Make an API request to fetch the current date and time
-  const response = await fetch("http://localhost:3000/countdown");
+  const response = await fetch(`${API_URL}/countdown`);
   const data = await response.json();
 
   // Start the countdown timer
