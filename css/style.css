@@ -344,19 +344,19 @@ footer p strong {
   background-color: #000;
   color: #fff;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+  border: 4px inset #ff3c00;
 }
 
 .counter__stat > div {
-  border: 4px inset #ff3c00;
   font-size: 4em;
-  line-height: 1.2em;
+  line-height: 0em;
   overflow: hidden;
-  height: 3.2em;
-  width: 1.7em;
+  max-height: 1.2em;
+  max-width: 1em;
   text-align: center;
 }
 .counter__stat > div .number {
-  margin: 4rem 0;
+  margin: 2.5rem 0.25em;
   position: relative;
 }
 
@@ -396,5 +396,15 @@ footer p strong {
   }
   .about_media img {
     max-width: 300px;
+  }
+  .counter__stat > div .number {
+    margin: 4rem 0;
+  }
+  .counter__stat > div {
+    line-height: 1.2em;
+    height: 3.2em;
+    max-height: 3.2em;
+    width: 1.7em;
+    max-width: 1.7em;
   }
 }
