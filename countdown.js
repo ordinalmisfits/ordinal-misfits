@@ -4,7 +4,7 @@ const tensEl = document.querySelector("#tenth");
 const onesEl = document.querySelector("#ones");
 
 MAX_COUNTER_LENGTH = 5000;
-COUNTER_INCREMENT_INTERVAL = 1000;
+COUNTER_INCREMENT_INTERVAL = 30 * 60 * 1000;
 
 const getPrevNum = (number) => {
   if (parseInt(number) <= 0) return 0;
