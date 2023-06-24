@@ -364,12 +364,14 @@ footer p strong {
 @keyframes moveNumberOut {
   0% {
     margin-top: 0em;
+    opacity: 1;
   }
   30% {
-    margin-top: -1.2em;
+    margin-top: -0.7em;
   }
   100% {
-    margin-top: -1.2em;
+    margin-top: 0em;
+    opacity: 0;
   }
 }
 .move-number-out {
@@ -410,5 +412,16 @@ footer p strong {
     max-height: 3.2em;
     width: 1.7em;
     max-width: 1.7em;
+  }
+  @keyframes moveNumberOut {
+    0% {
+      margin-top: 0em;
+    }
+    30% {
+      margin-top: -1.2em;
+    }
+    100% {
+      margin-top: -1.2em;
+    }
   }
 }
