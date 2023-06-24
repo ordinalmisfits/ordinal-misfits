@@ -4,9 +4,28 @@ const thousandEl = document.querySelector("#thousandth");
 const hundredEl = document.querySelector("#hundredth");
 const tensEl = document.querySelector("#tenth");
 const onesEl = document.querySelector("#ones");
+const padEl = document.querySelector("#pad");
 
 const MAX_COUNTER_LENGTH = 5000;
 const COUNTER_INCREMENT_INTERVAL = 30 * 60 * 1000;
+
+const runInitCounter = (newCountdownFn, counter) => {
+  let currentNumber = counter;
+  // Display the initial countdown immediately
+  updateCountdownDisplay(currentNumber);
+
+  // Update the countdown every second
+  const countdown = setInterval(function () {
+    currentNumber++;
+    if (currentNumber > MAX_COUNTER_LENGTH) {
+      clearInterval(countdown);
+      newCountdownFn(currentNumber);
+      return;
+    }
+
+    updateCountdownDisplay(currentNumber);
+  }, COUNTER_INCREMENT_INTERVAL);
+};
 
 const getPrevNum = (number) => {
   if (parseInt(number) <= 0) return 0;
@@ -19,7 +38,7 @@ async function fetchCountdownInfo() {
   const data = await response.json();
 
   // Start the countdown timer
-  startCountdown(data.counter);
+  runInitCounter(startCountdown, data.counter);
 }
 
 // Function to start the countdown timer
@@ -43,7 +62,7 @@ function startCountdown(startNumber) {
 // Function to update the countdown display
 function updateCountdownDisplay(currentNumber) {
   const numberString = currentNumber.toString().padStart(4, "0");
-
+  padEl.innerHTML = '<p class="number">' + 0 + "</p>";
   onesEl.innerHTML =
     '<p class="number move-number-out">' +
     getPrevNum(numberString.charAt(3)) +
