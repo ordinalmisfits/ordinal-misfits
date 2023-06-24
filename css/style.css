@@ -338,7 +338,7 @@ footer p strong {
   margin: 20px auto;
   width: 100%;
   display: flex;
-  gap: 12px;
+  gap: 8px;
   justify-content: center;
 }
 .counter__stat {
@@ -353,11 +353,11 @@ footer p strong {
   line-height: 0em;
   overflow: hidden;
   max-height: 1.2em;
-  max-width: 1em;
+  max-width: 0.9em;
   text-align: center;
 }
 .counter__stat > div .number {
-  margin: 0.5em 0.25em;
+  margin: 0.5em 0.2em;
   position: relative;
 }
 
