@@ -64,6 +64,9 @@
       e.preventDefault();
       fetch(`${API_URL}/startcountdown`, {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({
           password: inputKey.value,
           reset: true,
