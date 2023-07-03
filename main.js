@@ -3,9 +3,13 @@
 const gallery = document.getElementById("gallery");
 
 const muteBtn = document.getElementById("mute-btn");
+const video = muteBtn.previousElementSibling;
+
+video.addEventListener("volumechange", () => {
+  muteBtn.textContent = video.muted ? "Unmute" : "Mute";
+});
 
 muteBtn.addEventListener("click", () => {
-  const video = muteBtn.previousElementSibling;
   video.muted = !video.muted;
   muteBtn.textContent = video.muted ? "Unmute" : "Mute";
 });
