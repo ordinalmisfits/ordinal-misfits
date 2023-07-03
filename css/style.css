@@ -54,6 +54,17 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+
+  background-image: linear-gradient(
+      to right top,
+      rgba(0, 24, 31, 0.7882352941),
+      rgba(0, 24, 31, 0.8)
+    ),
+    url("../images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+  background-attachment: fixed;
 }
 
 nav .brand {
@@ -116,10 +127,21 @@ section:not(:last-of-type) {
 
 #about {
   display: grid;
-  background-color: #fff;
-  color: #000;
+  background-color: rgba(0, 24, 31, 0.5);
+  color: #fff;
   gap: 20px;
   overflow-x: hidden;
+
+  background-image: linear-gradient(
+      to right top,
+      rgba(0, 24, 31, 0.7882352941),
+      rgba(0, 24, 31, 0.5)
+    ),
+    url("../images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .about_content h2 {
   margin-bottom: 10px;
