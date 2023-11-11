@@ -1,0 +1,420 @@
+:root {
+  --primary-color: #f9f9f9;
+  --secondary-color: #fe5722;
+  --dark-color: #2f3138;
+  --light-color: #e8c8b3;
+  --accent-color: #feae34;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+/* body {
+  background-image: url(./images/sunset-lg.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: bottom; 
+} */
+
+section {
+  height: 100dvh;
+  padding: 0 20px;
+  width: 4;
+}
+
+nav {
+  z-index: 10;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+nav .social-links {
+  display: flex;
+  gap: 30px;
+  font-size: 23.125px;
+  font-weight: 700;
+}
+nav .social-links li {
+  position: relative;
+  list-style: none;
+}
+nav .social-links li::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: url(./images/arrow-right.svg) no-repeat;
+  margin-right: 0.5rem;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  display: block;
+  position: absolute;
+}
+
+nav > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav > div > div {
+  position: absolute;
+  top: 88%;
+  right: 50%;
+  transform: translate(50%, -88%);
+}
+
+nav > svg {
+  /* z-index: -1 */
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+section {
+  overflow: hidden;
+}
+section .container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#hero > h1 {
+  color: #fff36d;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0px 2.7664928436279297px 0px #ff2300;
+  font-size: 26.978px;
+}
+
+#hero img {
+  display: block;
+  width: 380px;
+  margin: 0 auto;
+}
+
+#info {
+  position: relative;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+}
+
+#info .box-wrap .section-bg {
+  position: absolute;
+  height: 52%;
+  width: 100%;
+}
+
+#info .bitcoin-display {
+  margin-top: 30px;
+  height: 70px;
+  background-image: url(./images/bitcoin.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#info .content-content {
+  z-index: 0;
+  width: 65%;
+  color: #000;
+}
+#info .content-content p:first-of-type {
+  margin-bottom: 30px;
+}
+
+#wenmint {
+  position: relative;
+}
+
+#wenmint .wenmint-text,
+#postmint .postmint-text {
+  align-self: flex-start;
+  margin-bottom: 40px;
+}
+
+#wenmint .box-wrap .section-bg {
+  position: absolute;
+  height: 60%;
+  width: 100%;
+}
+
+#wenmint .content-content {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 90%;
+  z-index: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+  gap: 30px;
+  align-items: center;
+}
+
+#wenmint .content-content > div > * {
+  margin-bottom: 5px;
+}
+#wenmint .content-content img {
+  position: relative;
+  width: 500px;
+  max-width: 200px;
+
+  border: 2.902px solid #000;
+  box-shadow: 1.45086px 1.45086px 0px 0px #000;
+}
+#postmint {
+  position: relative;
+}
+
+#postmint .box-wrap .section-bg {
+  position: absolute;
+  height: 60%;
+  width: 100%;
+}
+#postmint .content-content {
+  display: flex;
+  flex-direction: column-reverse;
+  z-index: 0;
+  text-align: center;
+  font-weight: 400;
+
+  gap: 30px;
+  width: 70%;
+  align-items: center;
+
+  font-size: 15px;
+  letter-spacing: 0.15px;
+}
+#postmint .content-content > div > * {
+  margin-bottom: 5px;
+}
+#postmint .content-content img {
+  position: relative;
+  max-width: 200px;
+  width: 400px;
+}
+#raffle {
+  position: relative;
+  font-size: 26.154px;
+  font-weight: 600;
+  letter-spacing: 0.262px;
+}
+
+.box-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#raffle .raffle-text {
+  position: absolute;
+  top: 0px;
+  height: fit-content;
+  z-index: 1;
+}
+#raffle .box-wrap .section-bg {
+  /* height: 100%; */
+  height: 35%;
+  width: 100%;
+  position: absolute;
+}
+#raffle .box {
+  width: 80%;
+  z-index: 0;
+}
+
+#wenmint,
+#postmint {
+  background-image: url(./images/bg4.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+#raffle {
+  background-image: url(./images/bg5.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+#hero {
+  background-image: url(./images/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#info {
+  background-image: url(./images/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#lounge {
+  background-image: url(./images/bg6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#lounge .box-wrap {
+  width: 90%;
+  height: 90%;
+}
+#lounge .box-wrap .section-bg {
+  height: 100%;
+  position: absolute;
+}
+
+.lounge-text {
+  margin-bottom: 10px;
+}
+
+#lounge .content-content {
+  display: flex;
+  text-align: center;
+  font-size: 26.154px;
+  font-weight: 400;
+  letter-spacing: 0.262px;
+  gap: 30px;
+  align-items: center;
+}
+
+#lounge .misfit-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 1fr 250px;
+}
+#lounge .misfit-avatar {
+  height: 200px;
+  position: relative;
+  width: 350px;
+}
+#lounge .misfit-avatar .avatar-cropped {
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  height: 310px;
+  width: 350px;
+  object-fit: cover;
+  object-position: bottom;
+  position: absolute;
+}
+#lounge .misfit-avatar .avatar {
+  z-index: 1;
+  border-radius: 10px;
+  bottom: 0;
+  left: 0;
+  height: 170px;
+  width: 350px;
+  object-fit: cover;
+  object-position: bottom;
+  position: absolute;
+}
+#lounge .misfit-avatar:last-of-type {
+  grid-column: 1/4;
+  width: 100%;
+  height: 100%;
+}
+#lounge .misfit-avatar:last-of-type video {
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+}
+
+footer {
+  height: 40vh;
+  background-image: url(./images/footer.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-weight: 400;
+  justify-content: end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  background-position: bottom;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+  section {
+    padding: 0 115px;
+  }
+  #hero > h1 {
+    text-shadow: 0px 4px 0px #ff2300;
+    font-size: 39.007px;
+  }
+  #info {
+    font-size: 26.154px;
+    letter-spacing: 0.262px;
+  }
+  #info .box-wrap .section-bg,
+  #raffle .box-wrap .section-bg {
+    height: auto;
+    width: auto;
+  }
+  #wenmint .box-wrap .section-bg,
+  #postmint .box-wrap .section-bg {
+    height: auto;
+    width: auto;
+  }
+  #info .bitcoin-display {
+    background-repeat: space no-repeat;
+  }
+  #wenmint .content-content {
+    font-size: 22px;
+    flex-direction: row;
+    letter-spacing: 0.262px;
+  }
+  #wenmint .content-content > div > * {
+    margin-bottom: 20px;
+  }
+  #wenmint .content-content img {
+    border: 8px solid #000;
+    max-width: unset;
+    box-shadow: 4px 4px 0px 0px #000;
+    bottom: 100px;
+  }
+  #postmint .content-content {
+    flex-direction: row;
+    font-size: 26.154px;
+    letter-spacing: 0.262px;
+  }
+  #postmint .content-content > div > * {
+    margin-bottom: 20px;
+  }
+  #postmint .content-content img {
+    bottom: 100px;
+    max-width: unset;
+  }
+  #raffle .box {
+    width: 80%;
+  }
+  #lounge .misfit-grid {
+    grid-template-columns: repeat(3, minmax(350px, 350px));
+
+    /* grid-template-columns: repeat(3, minmax(150px, 250px)); */
+  }
+}
