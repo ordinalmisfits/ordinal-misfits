@@ -41,8 +41,8 @@ a {
 nav .social-links {
   display: flex;
   gap: 30px;
-  font-size: 23.125px;
   font-weight: 700;
+  font-size: 16.436px;
 }
 nav .social-links li {
   position: relative;
@@ -357,6 +357,9 @@ footer {
 @media (min-width: 768px) {
   section {
     padding: 0 115px;
+  }
+  nav .social-links {
+    font-size: 23.125px;
   }
   #hero > h1 {
     text-shadow: 0px 4px 0px #ff2300;
