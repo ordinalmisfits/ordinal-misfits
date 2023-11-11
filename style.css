@@ -109,7 +109,7 @@ section .container {
 
 #info .box-wrap .section-bg {
   position: absolute;
-  height: 52%;
+  height: 60%;
   width: 100%;
 }
 
@@ -187,7 +187,7 @@ section .container {
   font-weight: 400;
 
   gap: 30px;
-  width: 70%;
+  width: 85%;
   align-items: center;
 
   font-size: 15px;
