@@ -9,6 +9,10 @@
   font-family: "Pixelify Sans", sans-serif;
 }
 
+body {
+  background-color: #ff2300;
+}
+
 img,
 svg,
 video {
@@ -260,7 +264,7 @@ section .container {
   height: 90%;
 }
 #lounge .box-wrap .section-bg {
-  height: 70%;
+  height: 45%;
   position: absolute;
 }
 
@@ -284,11 +288,11 @@ section .container {
   place-items: center;
   gap: 20px;
   grid-template-rows: 1fr 150px;
-  grid-template-columns: repeat(2, minmax(150px, 150px));
+  grid-template-columns: repeat(2, minmax(125px, 125px));
 }
 
 #lounge .misfit-avatar {
-  width: 150px;
+  width: 125px;
   /* height: 100%; */
   position: relative;
 }
@@ -296,8 +300,10 @@ section .container {
   z-index: 2;
   left: 0;
   bottom: 0;
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 125px;
+  /* height: 150px;
+  width: 150px; */
   object-fit: cover;
   object-position: bottom;
   position: absolute;
@@ -308,14 +314,14 @@ section .container {
   bottom: 0;
   left: 0;
   height: 75px;
-  width: 150px;
+  width: 125px;
   object-fit: cover;
   object-position: bottom;
   position: absolute;
 }
 #lounge .misfit-avatar:last-of-type {
   /* grid-column: 2/4; */
-  grid-column: 1/4;
+  grid-column: 1/3;
   width: 100%;
   height: 100%;
 }
@@ -409,6 +415,9 @@ footer {
   }
   #lounge .misfit-avatar:nth-child(3) {
     display: block;
+  }
+  #lounge .misfit-avatar:last-of-type {
+    grid-column: 1/4;
   }
   #lounge .misfit-avatar .avatar-cropped {
     height: 260px;
