@@ -27,9 +27,10 @@ video {
 
 section {
   overflow: hidden;
+  height: 100svh;
   height: 100dvh;
+  height: 100vh;
   padding: 10px 20px;
-  width: 4;
 }
 
 nav {
@@ -336,6 +337,8 @@ section .container {
 }
 
 footer {
+  height: 20svh;
+  height: 20dvh;
   height: 20vh;
   background-image: url(./images/footer.png);
   display: flex;
@@ -434,6 +437,8 @@ footer {
     width: 310px;
   }
   footer {
+    height: 40svh;
+    height: 40dvh;
     height: 40vh;
   }
 }
