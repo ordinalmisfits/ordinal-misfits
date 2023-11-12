@@ -11,6 +11,8 @@
 
 body {
   background-color: #ff2300;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 img,
@@ -23,6 +25,13 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.snow {
+  position: absolute;
+  top: 0;
+}
+.snow.base {
+  display: none;
 }
 
 section {
@@ -54,6 +63,13 @@ nav .social-links {
 nav .social-links li {
   position: relative;
   list-style: none;
+}
+nav .social-links li:hover a {
+  color: #ff4400;
+}
+nav .social-links li:hover::before {
+  filter: invert(31%) sepia(100%) saturate(3175%) hue-rotate(3deg)
+    brightness(104%) contrast(105%);
 }
 nav .social-links li::before {
   content: "";
@@ -137,7 +153,7 @@ section .container {
 #wenmint .wenmint-text,
 #postmint .postmint-text {
   align-self: flex-start;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 #wenmint .box-wrap .section-bg {
