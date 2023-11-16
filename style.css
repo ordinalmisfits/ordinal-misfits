@@ -105,7 +105,8 @@ nav {
   display: none;
   gap: 40px;
 
-  font-family: Century, Georgia, "Times New Roman", Times, serif;
+  font-family: Century, "century-regular", Georgia, "Times New Roman", Times,
+    serif;
   font-size: 23.214px;
 }
 section {
@@ -136,7 +137,8 @@ section#hero {
   margin-bottom: 40px;
   text-align: center;
   color: #fff36d;
-  font-family: Century, Georgia, "Times New Roman", Times, serif;
+  font-family: Century, "century-regular", Georgia, "Times New Roman", Times,
+    serif;
 }
 #hero h1 {
   /* font-size: 137.638px; */
@@ -346,7 +348,8 @@ section .tagline img {
   margin: 40px auto 0 auto;
   cursor: pointer;
   color: #000;
-  font-family: Century, Georgia, "Times New Roman", Times, serif;
+  font-family: Century, "century-regular", Georgia, "Times New Roman", Times,
+    serif;
   font-size: clamp(23px, 5vw, 40px);
   /* font-size: 40.398px; */
   position: relative;
@@ -410,7 +413,8 @@ footer .socials > img {
   height: 20px;
 }
 footer .powered {
-  font-family: Century, Georgia, "Times New Roman", Times, serif;
+  font-family: Century, "century-regular", Georgia, "Times New Roman", Times,
+    serif;
 }
 
 @keyframes float {
