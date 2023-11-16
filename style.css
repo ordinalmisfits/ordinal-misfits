@@ -34,7 +34,7 @@ section {
   justify-content: space-evenly;
   width: 80%;
 }
-.nav-links .socials > img {
+.nav-links .socials > a img {
   width: 20px;
   height: 20px;
 }
@@ -408,7 +408,7 @@ footer .socials {
   width: 60%;
   margin-bottom: 30px;
 }
-footer .socials > img {
+footer .socials > a img {
   width: 20px;
   height: 20px;
 }
@@ -522,11 +522,11 @@ footer .powered {
     width: 80px;
     height: 80px;
   }
-  #raffle button svg {
+  /* #raffle button svg {
     width: 80%;
-  }
+  } */
 
-  footer .socials > img {
+  footer .socials > a img {
     width: 50px;
     height: 50px;
   }
