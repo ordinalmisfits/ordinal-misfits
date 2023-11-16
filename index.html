@@ -124,84 +124,45 @@
           </a>
         </div>
       </section>
+
       <div class="marquee-info">
-        <div class="wrapper">
-          <div class="marquee-container">
-            <div class="marquee-scroll">
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
+        <div class="marquee-container">
+          <div class="marquee-scroll">
+            <div class="marquee-item">
+              <p>OrdinalMisfits</p>
+              <img src="./images/asterisk.svg" alt="" />
             </div>
-            <div class="marquee-scroll">
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
-              <div class="marquee-item">
-                <p>OrdinalMisfits</p>
-                <img src="./images/asterisk.svg" alt="" />
-              </div>
+            <div class="marquee-item">
+              <p>OrdinalMisfits</p>
+              <img src="./images/asterisk.svg" alt="" />
+            </div>
+            <div class="marquee-item">
+              <p>OrdinalMisfits</p>
+              <img src="./images/asterisk.svg" alt="" />
+            </div>
+            <div class="marquee-item">
+              <p>OrdinalMisfits</p>
+              <img src="./images/asterisk.svg" alt="" />
+            </div>
+            <div class="marquee-item">
+              <p>OrdinalMisfits</p>
+              <img src="./images/asterisk.svg" alt="" />
+            </div>
+            <div class="marquee-item">
+              <p>OrdinalMisfits</p>
+              <img src="./images/asterisk.svg" alt="" />
+            </div>
+            <div class="marquee-item">
+              <p>OrdinalMisfits</p>
+              <img src="./images/asterisk.svg" alt="" />
+            </div>
+            <div class="marquee-item">
+              <p>OrdinalMisfits</p>
+              <img src="./images/asterisk.svg" alt="" />
+            </div>
+            <div class="marquee-item">
+              <p>OrdinalMisfits</p>
+              <img src="./images/asterisk.svg" alt="" />
             </div>
           </div>
         </div>
@@ -1614,6 +1575,7 @@
       const raffleVideo = document.querySelector("#raffleVideo");
       const menuBtn = document.querySelector("#menu-btn");
       const navMenu = document.querySelector(".nav-links");
+      const marqueeScroller = document.querySelector(".marquee-container");
 
       playBtn.addEventListener("click", () => {
         if (raffleVideo.paused) {
@@ -1629,6 +1591,23 @@
         navMenu.classList.toggle("menu-open");
         document.body.classList.toggle("noscroll");
       });
+
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        addAnimation();
+      }
+
+      function addAnimation() {
+        marqueeScroller.setAttribute("data-animated", true);
+
+        const scrollerInner = marqueeScroller.querySelector(".marquee-scroll");
+        const scrollerContent = Array.from(scrollerInner.children);
+
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          duplicatedItem.setAttribute("aria-hidden", true);
+          scrollerInner.appendChild(duplicatedItem);
+        });
+      }
     </script>
   </body>
 </html>
