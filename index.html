@@ -9,8 +9,15 @@
       href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Ordinal Misfits</title>
   </head>
 
   <body>
@@ -75,30 +82,32 @@
       </nav>
       <section id="hero">
         <div class="content">
-          <div class="definition">
+          <div class="definition" data-aos="zoom-in-up">
             <h1>/ˈmɪsfɪt/</h1>
             <p class="noun">(noun)</p>
           </div>
-          <p class="tagline">
+          <p class="tagline" data-aos="zoom-in-down" data-aos-delay="100">
             a person who is not <em>accepted</em> by a particular group of
             <em>people</em>, especially because their <em>behavior</em> or their
             ideas are very <em>different</em>
             <img src="./images/misfits4.svg" alt="" />
           </p>
-          <svg
-            class="scroll-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="49"
-            viewBox="0 0 28 49"
-            fill="none"
-          >
-            <path
-              d="M13.9651 0.984724C12.6203 9.78542 13.2987 19.2303 13.0096 28.1216C12.9588 29.6846 13.9272 39.5384 12.0141 40.5733C11.515 40.8433 6.55778 31.7754 6.28466 31.3368C4.1995 27.9882 -0.989882 19.0882 5.32454 27.0075C7.23538 29.404 16.7655 43.7805 20.769 38.732C22.8959 36.0499 26.6802 26.5116 25.9234 29.85C24.873 34.4831 18.6334 39.0421 15.4438 42.3217C14.9788 42.7998 10.0795 47.1505 10.0499 46.4667C9.87724 42.4832 15.9697 36.2067 17.9593 33.2411C20.4783 29.4863 24.2037 25.4343 25.8397 21.151C28.7268 13.5916 20.6114 39.6683 12.7528 41.5974C10.4582 42.1606 6.64642 32.281 5.76833 30.5916C4.0406 27.2674 14.4207 36.7621 15.6997 36.1552C18.7102 34.7267 12.8235 20.257 13.5242 16.5317C13.87 14.6931 14.3542 12.8705 14.7679 11.046C16.2896 4.33362 12.6192 24.6625 12.1796 31.5311C11.9607 34.9508 11.7183 38.0999 10.9655 41.4206"
-              stroke="#FFF36D"
-              stroke-width="3"
-            />
-          </svg>
+          <a href="#wenmint">
+            <svg
+              class="scroll-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="49"
+              viewBox="0 0 28 49"
+              fill="none"
+            >
+              <path
+                d="M13.9651 0.984724C12.6203 9.78542 13.2987 19.2303 13.0096 28.1216C12.9588 29.6846 13.9272 39.5384 12.0141 40.5733C11.515 40.8433 6.55778 31.7754 6.28466 31.3368C4.1995 27.9882 -0.989882 19.0882 5.32454 27.0075C7.23538 29.404 16.7655 43.7805 20.769 38.732C22.8959 36.0499 26.6802 26.5116 25.9234 29.85C24.873 34.4831 18.6334 39.0421 15.4438 42.3217C14.9788 42.7998 10.0795 47.1505 10.0499 46.4667C9.87724 42.4832 15.9697 36.2067 17.9593 33.2411C20.4783 29.4863 24.2037 25.4343 25.8397 21.151C28.7268 13.5916 20.6114 39.6683 12.7528 41.5974C10.4582 42.1606 6.64642 32.281 5.76833 30.5916C4.0406 27.2674 14.4207 36.7621 15.6997 36.1552C18.7102 34.7267 12.8235 20.257 13.5242 16.5317C13.87 14.6931 14.3542 12.8705 14.7679 11.046C16.2896 4.33362 12.6192 24.6625 12.1796 31.5311C11.9607 34.9508 11.7183 38.0999 10.9655 41.4206"
+                stroke="#FFF36D"
+                stroke-width="3"
+              />
+            </svg>
+          </a>
         </div>
       </section>
       <div class="marquee-info">
@@ -191,13 +200,13 @@
         </div>
       </div>
       <section id="wenmint">
-        <div class="media">
+        <div class="media" data-aos="fade-right">
           <h2>WEN MINT</h2>
           <figure>
             <img src="./images/about.jpg" alt="" />
           </figure>
         </div>
-        <div class="content">
+        <div class="content" data-aos="fade-left" data-aos-delay="200">
           <p>
             They do not see the amazing communities that are made, the
             friendships created, the projects brought to life, amazing art,
@@ -211,7 +220,7 @@
         </div>
       </section>
       <section id="postmint">
-        <div class="media">
+        <div class="media" data-aos="fade-left">
           <h2>POST MINT</h2>
           <figure>
             <!-- <img src="./images/bag-sm.svg" alt="" /> -->
@@ -1483,7 +1492,7 @@
             </svg>
           </figure>
         </div>
-        <div class="content">
+        <div class="content" data-aos="fade-right" data-aos-delay="200">
           <p>
             Each Ordinal Misfits will have a special utility through our website
             TBA, and backpacks will have a role to play, as well.
@@ -1503,7 +1512,7 @@
         </div>
       </section>
       <section id="raffle">
-        <div class="content">
+        <div class="content" data-aos="fade-right">
           <h2>raffle</h2>
           <a class="check-out">
             <svg
@@ -1522,7 +1531,7 @@
             <p>coming <span>soon</span></p>
           </a>
         </div>
-        <div class="media">
+        <div class="media" data-aos="fade-left" data-aos-delay="200">
           <figure>
             <video id="raffleVideo">
               <source src="./images/videos/raffle-demo.mp4" />
@@ -1567,17 +1576,20 @@
         </div>
       </section>
       <footer>
-        <div class="socials">
+        <div class="socials" data-aos="fade-up">
           <img src="./images/icon-x.svg" alt="X(Twitter)" />
           <img src="./images/icon-discord.svg" alt="Discord" />
           <img src="./images/icon-subber.svg" alt="Subber" />
         </div>
-        <p class="powered">powered by bitcoin</p>
+        <p class="powered" data-aos="fade-up" data-aos-delay="200">
+          powered by bitcoin
+        </p>
         <p>Ordinal Misfits © 2023</p>
       </footer>
     </main>
 
     <script>
+      AOS.init();
       const playBtn = document.querySelector("#playBtn");
       const raffleVideo = document.querySelector("#raffleVideo");
       const menuBtn = document.querySelector("#menu-btn");

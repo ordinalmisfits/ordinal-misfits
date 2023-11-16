@@ -3,9 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 img,
 svg,
 video {
+  height: auto;
   max-width: 100%;
 }
 body.noscroll {
@@ -15,6 +19,9 @@ body {
   font-family: Helvetica Now Display, Arial, Helvetica, sans-serif;
   color: #fff;
   background-color: #d82416;
+}
+section {
+  overflow-x: hidden;
 }
 .nav-links .socials {
   display: flex;
@@ -32,7 +39,7 @@ body {
   height: 20px;
 }
 nav img {
-  max-width: 150px;
+  max-width: 100px;
 }
 nav .menu-btn[data-open="true"] .icon-open,
 nav .menu-btn[data-open="false"] .icon-close {
@@ -48,6 +55,7 @@ nav .menu-btn {
   z-index: 9;
 }
 nav {
+  height: 15dvh;
   height: 15vh;
   z-index: 99;
   display: flex;
@@ -101,9 +109,11 @@ nav {
   font-size: 23.214px;
 }
 section {
+  min-height: 100dvh;
   min-height: 100vh;
 }
 section#hero {
+  min-height: 85dvh;
   min-height: 85vh;
   display: flex;
   justify-content: center;
@@ -120,6 +130,7 @@ section#hero {
 }
 
 #hero .definition {
+  transform: translateY(-50%);
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -229,7 +240,7 @@ section .tagline img {
 #wenmint,
 #postmint {
   gap: 40px;
-  padding: 150px 10%;
+  padding: 15% 10%;
   /* padding: 150px 70px; */
   background: #d82416;
 
@@ -303,6 +314,7 @@ section .tagline img {
 
 #raffle {
   background: #fff36d;
+  min-height: 50dvh;
   min-height: 50vh;
 }
 #raffle figure {
@@ -372,6 +384,7 @@ section .tagline img {
   max-width: 400px;
 } */
 footer {
+  overflow: hidden;
   text-align: center;
   padding: 40px 70px;
   background-image: url(./images/footer2.png);
@@ -452,7 +465,7 @@ footer .powered {
   }
   #wenmint,
   #postmint {
-    padding: 0 70px;
+    padding: 10% 70px;
     grid-template-columns: 1fr 1fr;
   }
   #wenmint h2,
