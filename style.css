@@ -86,7 +86,7 @@ nav {
 }
 .nav-links li {
   position: relative;
-  padding: 22px;
+  padding: 12px;
 }
 .nav-links li:hover {
   color: #fff36d;
@@ -100,7 +100,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
   padding: 0 10%;
 }
@@ -111,7 +111,7 @@ nav {
 
   font-family: Century, "century-regular", Georgia, "Times New Roman", Times,
     serif;
-  font-size: 23.214px;
+  font-size: 20.214px;
 }
 section {
   min-height: 100dvh;
@@ -197,6 +197,7 @@ section .tagline img {
   text-wrap: wrap;
 }
 .marquee-info .tagline {
+  text-transform: uppercase;
   text-align: center;
   margin: 20px 0 40px 0;
   font-style: italic;
