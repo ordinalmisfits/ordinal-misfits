@@ -245,7 +245,7 @@ section .tagline img {
 }
 .marquee-scroll .marquee-item p {
   padding: 10px;
-  border: 1px solid #000;
+  border: 4px solid #000;
   font-size: clamp(35.459px, 4.5vw, 47px);
   font-family: "Technicality", sans-serif;
   font-family: "Technicality1", sans-serif;
@@ -436,6 +436,7 @@ footer .socials > a img {
   height: 20px;
 }
 footer .powered {
+  text-transform: capitalize;
   font-family: Century, "century-regular", Georgia, "Times New Roman", Times,
     serif;
 }
